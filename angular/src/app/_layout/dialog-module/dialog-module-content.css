@@ -1,0 +1,39 @@
+.module-card {
+    max-width: 115px;
+    max-height: 115px;
+    background: #565656d1;
+    color: white;
+    margin: 10px;
+}
+.card-list {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.bt-module-title {
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.bt-module-subtitle{
+    height: 50px;
+    width: 80px;
+    font-size: 12px;
+    display: block;
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bt-module {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+}
+
+

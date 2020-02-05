@@ -1,0 +1,19 @@
+:host .login-form {
+  text-align: center;
+  display: block;
+  padding-top: 10%;
+}
+
+form {
+  max-width: 300px;
+  margin: auto;
+  
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.actions {
+  text-align: center;
+}

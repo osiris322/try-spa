@@ -1,0 +1,28 @@
+<div class="login-form">
+
+    <div class="header center">Авторизация</div>
+    
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+
+        <mat-form-field>
+            <input matInput type="text" id="username" placeholder="Логии" autocomplete="off" formControlName="username">
+            <mat-error *ngIf="loginForm.get('username').hasError('required')">Необходимо ввести Логин</mat-error>
+            <mat-error *ngIf="loginForm.get('username').hasError('pattern')">Только латинские буквы и цифры</mat-error>
+        </mat-form-field>
+        
+        <mat-form-field>
+            <input matInput id="password" placeholder="Пароль" formControlName="password" required [type]="hide ? 'text' : 'password'">
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+            <mat-error *ngIf="loginForm.get('password').hasError('required')">Необходимо ввести Пароль</mat-error>
+            <mat-error *ngIf="loginForm.get('password').hasError('pattern')">Только латинские буквы и цифры</mat-error>
+        </mat-form-field>
+        
+        <div class="actions">
+            <button mat-raised-button color="primary" type="submit" [disabled]="btDisabled || !loginForm.valid">LOG IN</button>
+        </div>
+
+    </form>
+
+    <div *ngIf="error" >{{error}}</div>
+    
+</div>

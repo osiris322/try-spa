@@ -1,0 +1,18 @@
+<h2 mat-dialog-title>Модули</h2>
+<mat-dialog-content class="mat-typography" minHeight="300" minWidth="400">
+    <div class="card-list">
+        <button mat-raised-button color="primary" class="bt-module" [matMenuTriggerFor]="drilling">
+            <span class="bt-module-title">D&F</span>
+            <span class="bt-module-subtitle">Буровые<br>комплексы и<br>месторождения</span>
+            <mat-icon aria-hidden="false" style="font-size: 16px">keyboard_arrow_down</mat-icon>
+        </button>
+        <mat-menu #drilling="matMenu">
+            <button mat-menu-item>item 1</button>
+            <mat-divider></mat-divider>
+            <button mat-menu-item>item 2</button>
+        </mat-menu>
+    </div>   
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Закрыть</button>
+</mat-dialog-actions>

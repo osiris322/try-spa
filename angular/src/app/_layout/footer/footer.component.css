@@ -1,0 +1,11 @@
+footer{
+    text-align: center;
+    display: block;
+    position: relative;
+    line-height: 2.4em;
+    flex: 0.1;
+    padding: 4px;
+    z-index:0;
+    background-color: #0000f6;
+    
+}
